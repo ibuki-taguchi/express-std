@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  if user
+    p Hello, #{user.username}
+    a(href="/logout") Logout 
+    br
+    a(href="/users") Users
+  else
+    a(href="/login") Login
+  div#root
+  div#root2
